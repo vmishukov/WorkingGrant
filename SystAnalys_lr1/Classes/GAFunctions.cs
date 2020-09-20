@@ -208,7 +208,7 @@ namespace SystAnalys_lr1
             int CountCarOn = 0;
             double Percent = 0;
 
-            StreamReader print2 = new StreamReader("mas26.txt");
+            StreamReader print2 = new StreamReader("../../Resources/Data/mas26.txt");
             for (int j = 0; j < _CarCount; j++)
             {
                 string line1 = print2.ReadLine();
