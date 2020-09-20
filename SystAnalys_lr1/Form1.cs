@@ -1,20 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Xml.Serialization;
-using System.Diagnostics;
+using MetroFramework.Forms;
+using MetroFramework;
 
 namespace SystAnalys_lr1
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroForm
     {
         DrawGraph G;
         GA genom;
@@ -1251,7 +1245,7 @@ namespace SystAnalys_lr1
              popSize1 =100;
             mutateRate1 = 0.01;
 
-            int key = int.Parse(textBox3.Text);
+            int key = int.Parse("0"); //тут должен быть тхтбокс3
             BinarySearch_Rec_Wrapper(V.Count, key);
             //double pro = 0;
             //int GenPercent = int.Parse(textBox3.Text);

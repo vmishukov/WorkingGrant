@@ -54,7 +54,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(-3, -2);
+            this.chart1.Location = new System.Drawing.Point(23, 63);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
@@ -65,7 +65,7 @@
             series1.YValuesPerPoint = 30;
             series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(641, 493);
+            this.chart1.Size = new System.Drawing.Size(592, 411);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
