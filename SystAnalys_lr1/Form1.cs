@@ -398,36 +398,36 @@ namespace SystAnalys_lr1
 
             if (LoadImage == 1)
             {
-                FileStream file = new FileStream("vertex.xml", FileMode.Open, FileAccess.Read, FileShare.None);
+                FileStream file = new FileStream("../../Resources/Vertexes/vertex.xml", FileMode.Open, FileAccess.Read, FileShare.None);
                 XmlSerializer Ver = new XmlSerializer(typeof(List<Vertex>));
                 V = (List<Vertex>)Ver.Deserialize(file);
                 file.Close();
                 //десериализируем ребра
-                FileStream file_2 = new FileStream("Edge.xml", FileMode.Open, FileAccess.Read, FileShare.None);
+                FileStream file_2 = new FileStream("../../Resources/Vertexes/Edge.xml", FileMode.Open, FileAccess.Read, FileShare.None);
                 XmlSerializer Edge = new XmlSerializer(typeof(List<Edge>));
                 E = (List<Edge>)Edge.Deserialize(file_2);
                 file_2.Close();
             }
             if (LoadImage == 2)
             {
-                FileStream file = new FileStream("vertex1.xml", FileMode.Open, FileAccess.Read, FileShare.None);
+                FileStream file = new FileStream("../../Resources/Vertexes/vertex1.xml", FileMode.Open, FileAccess.Read, FileShare.None);
                 XmlSerializer Ver = new XmlSerializer(typeof(List<Vertex>));
                 V = (List<Vertex>)Ver.Deserialize(file);
                 file.Close();
                 //десериализируем ребра
-                FileStream file_2 = new FileStream("Edge1.xml", FileMode.Open, FileAccess.Read, FileShare.None);
+                FileStream file_2 = new FileStream("../../Resources/Vertexes/Edge1.xml", FileMode.Open, FileAccess.Read, FileShare.None);
                 XmlSerializer Edge = new XmlSerializer(typeof(List<Edge>));
                 E = (List<Edge>)Edge.Deserialize(file_2);
                 file_2.Close();
             }
             if (LoadImage == 3)
             {
-                FileStream file = new FileStream("vertex2.xml", FileMode.Open, FileAccess.Read, FileShare.None);
+                FileStream file = new FileStream("../../Resources/Vertexes/vertex2.xml", FileMode.Open, FileAccess.Read, FileShare.None);
                 XmlSerializer Ver = new XmlSerializer(typeof(List<Vertex>));
                 V = (List<Vertex>)Ver.Deserialize(file);
                 file.Close();
                 //десериализируем ребра
-                FileStream file_2 = new FileStream("Edge2.xml", FileMode.Open, FileAccess.Read, FileShare.None);
+                FileStream file_2 = new FileStream("../../Resources/Vertexes/Edge2.xml", FileMode.Open, FileAccess.Read, FileShare.None);
                 XmlSerializer Edge = new XmlSerializer(typeof(List<Edge>));
                 E = (List<Edge>)Edge.Deserialize(file_2);
                 file_2.Close();
@@ -435,8 +435,8 @@ namespace SystAnalys_lr1
             int a = V.Count;
             if (radioButton6.Checked == true)
                 GeneticRun();
-            StreamReader print = new StreamReader("input.txt");
-
+            StreamReader print = new StreamReader("../../Resources/Data/input.txt");
+            
             string line = print.ReadLine();
 
             r = Convert.ToInt32(line);
@@ -456,7 +456,7 @@ namespace SystAnalys_lr1
             if (LoadImage == 1)
 
             {
-                StreamReader print2 = new StreamReader("masnew.txt");
+                StreamReader print2 = new StreamReader("../../Resources/Data/masnew.txt");
                 for (int i = 0; i < CarCount; i++)
                 {
                     string line1 = print2.ReadLine();
@@ -470,7 +470,7 @@ namespace SystAnalys_lr1
             }
             if (LoadImage == 2)
             {
-                StreamReader print2 = new StreamReader("mas7.txt");
+                StreamReader print2 = new StreamReader("../../Resources/Data/mas7.txt");
                 for (int i = 0; i < CarCount; i++)
                 {
                     string line1 = print2.ReadLine();
@@ -484,7 +484,7 @@ namespace SystAnalys_lr1
             }
             if (LoadImage == 3)
             {
-                StreamReader print2 = new StreamReader("mas13.txt");
+                StreamReader print2 = new StreamReader("../../Resources/Data/mas13.txt");
                 for (int i = 0; i < CarCount; i++)
                 {
                     string line1 = print2.ReadLine();

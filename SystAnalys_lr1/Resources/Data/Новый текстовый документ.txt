@@ -1,0 +1,6 @@
+[06:18:21] [Cost limit : 12]
+[06:18:21] [Iterations : 300]
+[06:18:21] [Population size : 300]
+[06:18:21] [MutateRate : 0,1]
+[06:18:21] [Car: 500]
+[06:18:21] [Time: 12]

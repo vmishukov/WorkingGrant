@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfVertex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Vertex>
+    <x>211</x>
+    <y>296</y>
+  </Vertex>
+  <Vertex>
+    <x>272</x>
+    <y>316</y>
+  </Vertex>
+</ArrayOfVertex>

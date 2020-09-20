@@ -122,7 +122,7 @@ namespace SystAnalys_lr1
 
         public DrawGraph(int width, int height)
         {
-            bitmap = new Bitmap("12.png", true);
+            bitmap = new Bitmap("../../Resources/Data/12.png", true);
             gr = Graphics.FromImage(bitmap);
             //clearSheet();
             blackPen = new Pen(Color.Black);
@@ -139,10 +139,10 @@ namespace SystAnalys_lr1
             darkGoldPen.Width = 2;
             fo = new Font("Arial", 5);
             br = Brushes.Black;
-            car1 = Image.FromFile("1a.png");
-            car2 = Image.FromFile("2a.png");
-            car3 = Image.FromFile("1b.png");
-            car4 = Image.FromFile("2b.png");
+            car1 = Image.FromFile("../../Resources/Data/1a.png");
+            car2 = Image.FromFile("../../Resources/Data/2a.png");
+            car3 = Image.FromFile("../../Resources/Data/1b.png");
+            car4 = Image.FromFile("../../Resources/Data/2b.png");
             position = new Point(0, 0);
 
         }
@@ -156,9 +156,9 @@ namespace SystAnalys_lr1
         {
             Graphics.FromImage(bitmap).Clear(Color.Wheat);
             if (LoadImage==1)
-            bitmap = new Bitmap("12.png", true);
+            bitmap = new Bitmap("../../Resources/Data/12.png", true);
             if (LoadImage == 2)
-                bitmap = new Bitmap("11.png", true);
+                bitmap = new Bitmap("../../Resources/Data/11.png", true);
             gr = Graphics.FromImage(bitmap);
 
         }
