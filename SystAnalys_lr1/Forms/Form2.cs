@@ -9,7 +9,7 @@ namespace SystAnalys_lr1
         public Form2()
         {
             InitializeComponent();
-            StreamReader print = new StreamReader("gist.txt");
+            StreamReader print = new StreamReader("../../Resources/Data/gist.txt");
             string line = print.ReadLine();
             int size = Convert.ToInt32(line);
             double[] y_values = new double[size];
